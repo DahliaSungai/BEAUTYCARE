@@ -30,7 +30,7 @@ const routes: Routes = [
   },
   {
     path: 'cart',
-    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+    loadChildren: () => import('./cust-cart/cart.module').then( m => m.CartPageModule)
   },
   {
     path: 'faq',
@@ -59,6 +59,22 @@ const routes: Routes = [
   {
     path: 'subscribed',
     loadChildren: () => import('./subscribed/subscribed.module').then( m => m.SubscribedPageModule)
+  },
+  {
+    path: 'upload-product',
+    loadChildren: () => import('./upload-image/upload-product/upload-product.module').then( m => m.UploadProductPageModule)
+  },
+  {
+    path: 'upload-product',
+    loadChildren: () => import('./upload-form/upload-product/upload-product.module').then( m => m.UploadProductPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'edit-profile',
+    loadChildren: () => import('./edit-profile/edit-profile.module').then( m => m.EditProfilePageModule)
   },
 ];
 
