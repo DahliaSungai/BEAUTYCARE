@@ -10,23 +10,39 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
+<div> <ion-card>
+  <ion-card-header>
+  <ion-row class="ion-align-items-center">
+    <ion-col size="8">
+     
+    <h1>Welcome to Vendor Page</h1>
+ 
+    </ion-col>
+  </ion-row>
+  </ion-card-header>  
 
-  <ion-card>
-    <ion-card-header>
-    <ion-row class="ion-align-items-center">
-      <ion-col size="8">
-       
-      Welcome to Vendor Page
-   
-      </ion-col>
-    </ion-row>
-    </ion-card-header>  
+</ion-card></div>
+ <br>
+  <div >
+    <ion-card>
+    <ion-list>
+      <ion-item>
+        <ion-button slot="start"color="light" size="large" defaultHref="home/upload-product"><ion-icon name="scan-circle-outline"></ion-icon><ion-label>Scan</ion-label></ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button slot="start"color="light" size="large"><ion-icon name="scan-circle-outline"></ion-icon><ion-label>Subscribed Plan</ion-label></ion-button> <br>
+      </ion-item>
+      <ion-item>
+        <ion-button slot="start"color="light" size="large"><ion-icon name="stats-chart-outline"></ion-icon>Customer Reviews</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button slot="start"color="light" size="large"><ion-icon name="chatbox-ellipses-outline"></ion-icon><ion-label>FAQ</ion-label></ion-button>
+      </ion-item>
+    </ion-list>
+  
   </ion-card>
-  <div id="container">
-    <ion-button slot="start"color="light" size="large"><ion-icon name="scan-circle-outline"></ion-icon><ion-label>Scan</ion-label></ion-button>
-    <ion-button slot="start"color="light" size="large"><ion-icon name="scan-circle-outline"></ion-icon><ion-label>Subscribed Plan</ion-label></ion-button> <br>
-    <ion-button slot="start"color="light" size="large"><ion-icon name="stats-chart-outline"></ion-icon>Customer Reviews</ion-button>
-    <ion-button slot="start"color="light" size="large"><ion-icon name="chatbox-ellipses-outline"></ion-icon><ion-label>FAQ</ion-label></ion-button>
+   
+   
   </div>
   <ion-tabs>
     <ion-tab-bar slot="bottom">
